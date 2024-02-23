@@ -1,0 +1,26 @@
+{
+  "exclude": [
+    "../node_modules/@types/jest",
+    "../node_modules/@testing-library/jest-dom"
+  ],
+  "include": [
+    "e2e/**/*",
+    "support/**/*",
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "types": ["node", ],
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "Bundler",
+    "target": "ES2020",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+
+    "paths": {
+      "~/*": ["../app/*"]
+    }
+  }
+}
